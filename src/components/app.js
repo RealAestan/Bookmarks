@@ -1,10 +1,11 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
-import Header from './header';
+import Header from './Header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
-import Login from './login';
+import Login from './Login';
+import BookmarkManager from './BookmarkManager';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
 
@@ -21,7 +22,9 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Header />
-				<Login />
+				<BookmarkManager/>
+				{/*<Login />*/}
+
 				{/*<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
